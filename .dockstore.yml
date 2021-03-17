@@ -46,11 +46,6 @@ workflows:
     primaryDescriptorPath: /scripts/import_genomes_wdl/import_genomes.wdl
     testParameterFiles:
      - empty.json
-  - name: MitochondriaPipeline
-    subclass: WDL
-    primaryDescriptorPath: /scripts/mitochondria_m2_wdl/MitochondriaPipeline.wdl
-    testParameterFiles:
-     -  /scripts/mitochondria_m2_wdl/test_mitochondria_m2_wdl.json
   - name: mutect2
     subclass: WDL
     primaryDescriptorPath: /scripts/mutect2_wdl/mutect2.wdl
